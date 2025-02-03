@@ -1,0 +1,46 @@
+# Python related
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.db
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# FastAPI's temp files
+*.pid
+
+# MongoDB (avoid dumping local MongoDB data or backups)
+*.bson
+*.json
+
+# MacOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+
+# Jupyter Notebooks (if used)
+.ipynb_checkpoints/
+
+# Coverage reports (if you are running tests with coverage)
+*.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# .env file for sensitive info (Mongo URI, API keys)
+.env
