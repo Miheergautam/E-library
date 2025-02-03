@@ -8,6 +8,15 @@ load_dotenv()
 
 app = FastAPI()
 
+# cors
+from fastapi.middleware.cors import CORSMiddleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 @app.get("/ping")
 async def ping():
     try:
